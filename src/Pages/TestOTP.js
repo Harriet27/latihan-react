@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import config from '../config';
-import '../App.css';
 
 const TestOTP = () => {
     useEffect(() => {
@@ -17,7 +16,6 @@ const TestOTP = () => {
     const clickSetOTP = () => {
         if (otp_code !== "") {
             set_div_display("none");
-            alert(`Your OTP is ${otp_code}`);
             console.log("otp code:", otp_code);
         } else {
             alert(`You haven't set otp yet!`);
@@ -44,20 +42,6 @@ const TestOTP = () => {
 
     return (
         <div>
-            <button>
-                <a 
-                    style={{
-                        textDecoration: 'none',
-                        color: 'black',
-                    }}
-                    id="whatsapp_otp"
-                    href={`${config.api_url_send_whatsapp}/62811999068?text=${message}`}
-                    rel="noopener noreferrer"
-                    target="_blank"
-                >
-                    Send OTP
-                </a>
-            </button>
             <div
                 style={{
                     display: div_display,
@@ -74,6 +58,20 @@ const TestOTP = () => {
                     Set OTP
                 </button>
             </div>
+            <button>
+                <a 
+                    style={{
+                        textDecoration: 'none',
+                        color: 'black',
+                    }}
+                    id="whatsapp_otp"
+                    href={`${config.api_url_send_whatsapp}/62811999068?text=${message}`}
+                    rel="noopener noreferrer"
+                    target="_blank"
+                >
+                    Send OTP
+                </a>
+            </button>
             <div>
                 <input 
                     type="number" 
