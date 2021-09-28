@@ -7,6 +7,7 @@ import {
   Test3,
   Test4,
   TestOTP,
+  TestLeaflet,
 } from './Pages';
 
 class App extends Component {
@@ -20,6 +21,7 @@ class App extends Component {
           <Route path='/test3' component={Test3} />
           <Route path='/test4' component={Test4} />
           <Route path='/test-otp' component={TestOTP} />
+          <Route path='/test-leaflet' component={TestLeaflet} />
         </Switch>
       </div>
     );

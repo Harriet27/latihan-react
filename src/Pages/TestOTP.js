@@ -85,6 +85,11 @@ const TestOTP = () => {
                     Submit OTP
                 </button>
             </div>
+            <div className='d-flex'>
+                <a href='/'>
+                    <input type='button' value='Back to Home' />
+                </a>
+            </div>
         </div>
     );
 };

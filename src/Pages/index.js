@@ -4,6 +4,7 @@ import Test2 from './Test2';
 import Test3 from './Test3';
 import Test4 from './Test4';
 import TestOTP from './TestOTP';
+import TestLeaflet from './TestLeaflet';
 
 export {
   Welcome,
@@ -12,4 +13,5 @@ export {
   Test3,
   Test4,
   TestOTP,
+  TestLeaflet,
 };
