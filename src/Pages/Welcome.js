@@ -39,6 +39,11 @@ const Welcome = () => {
             <input type='button' value='Go to Leaflet Test' className="navBtn" />
           </a>
         </div>
+        <div>
+          <a href='/geojson'>
+            <input type='button' value='Go to Geojson' className="navBtn" />
+          </a>
+        </div>
       </div>
     </div>
   );

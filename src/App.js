@@ -9,6 +9,7 @@ import {
   TestOTP,
   TestLeaflet,
 } from './Pages';
+import Geojson from "./Pages/Geojson";
 
 class App extends Component {
   render(){
@@ -22,6 +23,7 @@ class App extends Component {
           <Route path='/test4' component={Test4} />
           <Route path='/test-otp' component={TestOTP} />
           <Route path='/test-leaflet' component={TestLeaflet} />
+          <Route path='/geojson' component={Geojson} />
         </Switch>
       </div>
     );
